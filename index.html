@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font family -->
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- tailwind custom css -->
     <script>
         tailwind.config = {
@@ -17,20 +17,123 @@
               colors: {
                 clifford: '#da373d',
               }
+              
             }
           }
         }
     </script>
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
     
 </head>
-<body>
-    <header>
+<body class="font-lato">
+    <!-- <header>
         <nav></nav>
         <div class="banner"></div>
-    </header>
+    </header> -->
     <main>
-        <div class="deal-with">
-
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-col lg:flex-row   gap-10 pb-12">
+                <div class="flex-1">
+                    <h3 class="text-3xl font-extrabold text-[#121212]">Deal of the day</h3>
+                    <p class="text-[#121212] font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <!-- count down  -->
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max flex-1 justify-end">
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                      </span>
+                      days
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>
+                      </span>
+                      hours
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>
+                      </span>
+                      min
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:54;"></span>
+                      </span>
+                      sec
+                    </div>
+                </div>
+            </div>
+            <div class="text-center grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <div class="text-center border border-[#121212] rounded-lg py-12">
+                    <img src="./images/fruit6.png" alt="" class="mx-auto">
+                    <h3 class="text-2xl font-bold py-10">12.90$ - 18.85$</h3>
+                    <p class="font-semibold">Apples</p>
+                    <div class="rating py-6">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="">
+                        <a href="#" class="text-[#F85559] text-lg">details</a>
+                    </div>
+                </div>
+                <div class="text-center border border-[#121212] rounded-lg py-12">
+                    <img src="./images/fruit7.png" alt="" class="mx-auto">
+                    <h3 class="text-2xl font-bold py-10">12.90$ - 18.85$</h3>
+                    <p class="font-semibold">Orange</p>
+                    <div class="rating py-6">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="">
+                        <a href="#" class="text-[#F85559] text-lg">details</a>
+                    </div>
+                </div>
+                <div class="text-center border border-[#121212] rounded-lg py-12">
+                    <img src="./images/fruit8.png" alt="" class="mx-auto">
+                    <h3 class="text-2xl font-bold py-10">12.90$ - 18.85$</h3>
+                    <p class="font-semibold">Red Dragon</p>
+                    <div class="rating py-6">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="">
+                        <a href="#" class="text-[#F85559] text-lg">details</a>
+                    </div>
+                </div>
+                <div class="text-center border border-[#121212] rounded-lg py-12">
+                    <img src="./images/fruit9.png" alt="" class="mx-auto">
+                    <h3 class="text-2xl font-bold py-10">12.90$ - 18.85$</h3>
+                    <p class="font-semibold">Banana</p>
+                    <div class="rating py-6">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="">
+                        <a href="#" class="text-[#F85559] text-lg">details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center py-12">
+                <button class="btn bg-[#F85559] text-[#ffffff] hover:bg-[#F85559] ">Shop All</button>
+            </div>
         </div>
     </main>
 </body>
