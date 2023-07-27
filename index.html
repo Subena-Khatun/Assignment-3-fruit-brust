@@ -53,10 +53,10 @@
               </ul>
             </div>
         </div>
-        <nav class="my-16 hidden">
-            <div class="container  mx-auto  grid lg:grid-cols-3 justify-center items-center bg-[#F85559] py-7 rounded-full pl-12 px-4">
+        <nav class="my-16 hidden lg:block">
+            <div class="container  mx-auto  grid lg:grid-cols-3 justify-between items-center bg-[#F85559] py-7 rounded-full pl-8 px-4">
                 <div class="">
-                    <ul class="grid grid-flow-col gap-3 text-[#ffffff] justify-center text-2xl">
+                    <ul class="grid grid-flow-col gap-2 text-[#ffffff] justify-center text-lg">
                         <li class="px-2"><a href="">Home</a></li>
                         <li class="px-2"><a href="">About Us</a></li>
                         <li class="px-2"><a href="">Shop</a></li>
@@ -76,13 +76,13 @@
             </div>
         </nav>
         <div class="">
-            <div class="banner container mx-auto ">
+            <div class="banner container mx-auto relative">
                 <div class="carousel w-full">
                     <!-- slider 1 -->
                     <div id="slide1" class="carousel-item relative w-full">
                         <div class="hero " style="background-image: url(./images/banner1.png);">
-                            <div class="bg-gradient-to-tl from-[#121212] to-[#121212]  "></div>
-                            <div class="py-12 lg:py-28 text-center text-[#ffffff]">
+                            <div class="hero-overlay bg-opacity-80 "></div>
+                            <div class="py-28 lg:py-28 text-center text-[#ffffff]">
                                 <div class="max-w-md">
                                     <h1 class="mb-5 text-4xl font-bold">Exotic tastes at your <br> doorstep</h1>
                                     <p class="mb-5">We supply highly quality organic products</p>
@@ -150,7 +150,7 @@
                   </div>
             </div>
             <!-- banner bottom -->
-            <div class="max-w-6xl mx-auto shadow-lg py-10 text-center px-4 hidden">
+            <div class="max-w-6xl mx-auto shadow-lg py-6 text-center px-4 hidden absolute -bottom-60 left-48 lg:block z-10 bg-[#ffffff]">
                 <div class="grid grid-cols-1 lg:grid-cols-5  justify-center">
                     <div class="">
                         <img src="./images/fruit1.png" alt="" class="mx-auto">
@@ -177,7 +177,7 @@
         </div>
     </header>
     <!-- main -->
-    <main>
+    <main class="mt-48">
         <!-- deal the day -->
         <div class="container mx-auto py-8 px-4 ">
             <div class="flex flex-col md:flex-row text-center lg:text-left gap-10 pb-12">
