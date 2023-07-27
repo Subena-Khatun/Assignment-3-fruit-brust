@@ -17,11 +17,17 @@
               colors: {
                 clifford: '#da373d',
               }
+              backgroundImage: {
+                'meet-team': "url('./images/team.png')",
+                
+            }
               
             }
           }
         }
     </script>
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/458911f041.js" crossorigin="anonymous"></script>
     <style>
         .font-lato{
             font-family: 'Lato', sans-serif;
@@ -36,13 +42,13 @@
     </header> -->
     <main>
         <div class="container mx-auto px-4 py-8">
-            <div class="flex flex-col lg:flex-row   gap-10 pb-12">
-                <div class="flex-1">
-                    <h3 class="text-3xl font-extrabold text-[#121212]">Deal of the day</h3>
+            <div class="flex flex-col md:flex-row  gap-10 pb-12">
+                <div class="lg:flex-1">
+                    <h3 class="text-3xl font-extrabold text-[#121212] pb-6">Deal of the day</h3>
                     <p class="text-[#121212] font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <!-- count down  -->
-                <div class="grid grid-flow-col gap-5 text-center auto-cols-max flex-1 justify-end">
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max lg:flex-1 justify-end">
                     <div class="flex flex-col">
                       <span class="countdown font-mono text-5xl">
                         <span style="--value:15;"></span>
@@ -69,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <div class="text-center grid grid-cols-1 lg:grid-cols-4 gap-6">
                 <div class="text-center border border-[#121212] rounded-lg py-12">
                     <img src="./images/fruit6.png" alt="" class="mx-auto">
                     <h3 class="text-2xl font-bold py-10">12.90$ - 18.85$</h3>
@@ -133,6 +139,60 @@
             </div>
             <div class="text-center py-12">
                 <button class="btn bg-[#F85559] text-[#ffffff] hover:bg-[#F85559] ">Shop All</button>
+            </div>
+        </div>
+        <!-- meet the team -->
+        <div class="hero " style="background-image: url(./images/banner1.png);">
+            <div class="hero-overlay bg-opacity-60 ">
+                <div class="container mx-auto py-28">
+                    <div class="text-center ">
+                        <h1 class=" text-5xl font-bold text-[#fff]">Meet the team section</h1>
+                        <p class="py-6 text-[#fff] w-6/12 mx-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-4 justify-between gap-6">
+                        <div class="text-center">
+                            <img src="./images/member1.png" alt="" class="mx-auto">
+                            <h3 class="text-[#ffffff] font-extrabold text-2xl pt-8">Awlad Hossain</h3>
+                            <p class="text-[#ffffff] font-medium py-2">Fruits Expert</p>
+                            <ul class="flex flex-row gap-2 text-[#ffffff] justify-center">
+                                <li class="bg-[#F85559] px-2 py-1 rounded-full"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="bg-[#F85559] px-2 py-1 rounded-full"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="bg-[#F85559] px-2 py-1 rounded-full"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <img src="./images/member2.png" alt="" class="mx-auto">
+                            <h3 class="text-[#ffffff] font-extrabold text-2xl pt-8">Safia Chowdhury</h3>
+                            <p class="text-[#ffffff] font-medium py-2">Fruits Expert</p>
+                            <ul class="flex flex-row gap-2 text-[#ffffff] justify-center">
+                                <li class="bg-[#F85559] px-2 py-1 rounded-full"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="bg-[#F85559] px-2 py-1 rounded-full"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="bg-[#F85559] px-2 py-1 rounded-full"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <img src="./images/member3.png" alt="" class="mx-auto">
+                            <h3 class="text-[#ffffff] font-extrabold text-2xl pt-8">Rokib Hossain</h3>
+                            <p class="text-[#ffffff] font-medium py-2">Fruits Expert</p>
+                            <ul class="flex flex-row gap-2 text-[#ffffff] justify-center">
+                                <li class="bg-[#F85559] px-2 py-1 rounded-full"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="bg-[#F85559] px-2 py-1 rounded-full"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="bg-[#F85559] px-2 py-1 rounded-full"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <img src="./images/member4.png" alt="" class="mx-auto">
+                            <h3 class="text-[#ffffff] font-extrabold text-2xl pt-8">Chaity</h3>
+                            <p class="text-[#ffffff] font-medium py-2">Fruits Expert</p>
+                            <ul class="flex flex-row gap-2 text-[#ffffff] justify-center">
+                                <li class="bg-[#F85559] px-2 py-1 rounded-full"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="bg-[#F85559] px-2 py-1 rounded-full"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="bg-[#F85559] px-2 py-1 rounded-full"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </main>
